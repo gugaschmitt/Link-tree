@@ -8,6 +8,7 @@
 }
 
 :root {
+    --black: #141414;
     --dark-grey: #1F1F1F;
     --grey: #333333;
     --neon-greem: #C4F82A;
@@ -15,7 +16,7 @@
 }
 
 body {
-    background-color: var(--dark-grey);
+    background-color: var(--black);
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -23,7 +24,7 @@ body {
 }
 
 div {
-    background-color: var(--grey);
+    background-color: var(--dark-grey);
     color: var(--white);
     width: 384px;
     padding: 40px;
@@ -39,17 +40,18 @@ img {
 h1 {
     font-size: 24px;
     font-weight: 600;
-    line-height: 150%;
+    line-height: 100%;
     margin-bottom: 4px;
 }
 
 strong {
     font-size: 14px;
-    line-height: 150px;
+    line-height: 150%;
     color: var(--neon-greem);
 }
 
 p {
+    
     margin-block: 24px;
     font-size: 14px;
     line-height: 150%;
@@ -58,4 +60,22 @@ p {
 
 ul, li {
     list-style: none;
+}
+
+a {
+display: block;
+background-color: var(--grey);
+margin-bottom: 16px ;
+color: var(--white);
+text-decoration: none;
+border-radius: 8px;
+padding: 12px;
+font-size: 14px;
+font-weight: 700;
+}
+
+a:hover{
+    background-color: var(--neon-greem);
+    color: var(--dark-grey) ;
+    transition: .4s;
 }
